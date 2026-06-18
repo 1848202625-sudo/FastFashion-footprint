@@ -11,10 +11,10 @@ N = nSec * nReg;
 outFile = "0927cd-17-160.xlsx";
 rFile = "r2017.xlsx";
 
-groupNames = {'all','nonff','off','hm','zara','gap','uniqlo'};
-prodSheets = {'production','nonff','off','hm','zara','gap','uniqlo'};
-ccSheets = {'cc-all','cc-nonff','cc-off','cc-hm','cc-zara','cc-gap','cc-uniqlo'};
-rSheets = {'c-nonff','c-off','c-hm','c-zara','c-gap','c-uniqlo'};
+groupNames = {'all','traditional apperal','Other fast fashion','H&M','Inditex','gap','FastRetailing'};
+prodSheets = {'production','traditional apperal','Other fast fashion','H&M','Inditex','gap','FastRetailing'};
+ccSheets = {'cc-all','cc-traditional apperal','cc-Other fast fashion','cc-H&M','cc-Inditex','cc-gap','cc-FastRetailing'};
+rSheets = {'c-traditional apperal','c-Other fast fashion','c-H&M','c-Inditex','c-gap','c-FastRetailing'};
 
 groupRows = {
     28:33, ...

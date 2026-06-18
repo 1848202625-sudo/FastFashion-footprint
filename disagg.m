@@ -99,22 +99,22 @@ end
 p_nonfast = 95.47;
 p_fastavg = 16.53;
 
-p_off = 20.00;
+p_Other_fast_fashion = 20.00;
 p_hm = 9.85;
 p_zara = 23.02;
 p_gap = 16.07;
-p_uniqlo = 15.15;
+p_FastRetailing = 15.15;
 
 ratio_nf_fast = p_nonfast / p_fastavg;
 share_nonfast = 1 / (ratio_nf_fast + 1);
 share_fast = 1 - share_nonfast;
 
-ratio_off_hm = p_off / p_hm;
+ratio_Other_fast_fashion_hm = p_Other_fast_fashion / p_hm;
 ratio_zara_hm = p_zara / p_hm;
 ratio_gap_hm = p_gap / p_hm;
-ratio_uniqlo_hm = p_uniqlo / p_hm;
+ratio_FastRetailing_hm = p_FastRetailing / p_hm;
 
-w_fast_raw = [1/ratio_off_hm, 1, 1/ratio_zara_hm, 1/ratio_gap_hm, 1/ratio_uniqlo_hm];
+w_fast_raw = [1/ratio_Other_fast_fashion_hm, 1, 1/ratio_zara_hm, 1/ratio_gap_hm, 1/ratio_FastRetailing_hm];
 w_fast = w_fast_raw / sum(w_fast_raw);
 
 w6 = zeros(6,1);

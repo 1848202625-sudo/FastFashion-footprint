@@ -10,8 +10,8 @@ nReg = 160;
 N = nSec * nReg;
 
 brandRows = [29 30 31 32 33];
-sheetNames = {'cc-off','cc-hm','cc-zara','cc-gap','cc-uniqlo'};
-salesRaw = {soff, shm, szara, sgap, suniqlo};
+sheetNames = {'cc-Other fast fashion','cc-H&M','cc-Inditex','cc-gap','cc-FastRetailing'};
+salesRaw = {sOther fast fashion, sH&M, sInditex, sgap, sFastRetailing};
 
 years = [2020 2025 2030 2035 2040 2045 2050];
 

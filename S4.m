@@ -10,12 +10,12 @@ nSec = 70;
 nReg = 160;
 N = nSec * nReg;
 
-brandNames = {'off','hm','zara','gap','uniqlo'};
+brandNames = {'Other fast fashion','H&M','Inditex','gap','Fast Retailing'};
 brandRows = [29 30 31 32 33];
-sheetNames = {'cc-off','cc-hm','cc-zara','cc-gap','cc-uniqlo'};
+sheetNames = {'cc-Other fast fashion','cc-H&M','cc-Inditex','cc-gap','cc-Fast Retailing'};
 
-salesRaw = {soff, shm, szara, sgap, suniqlo};
-mRaw = {moff, mhm, mzara, mgap, muniqlo};
+salesRaw = {sOther fast fashion, sH&M, sInditex, sgap, sFast Retailing};
+mRaw = {mOther fast fashion, mH&M, mInditex, mgap, mFast Retailing};
 
 years = [2020 2025 2030 2035 2040 2045 2050];
 yearTags = [20 25 30 35 40 45 50];

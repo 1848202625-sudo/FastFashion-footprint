@@ -1,7 +1,7 @@
 clc
 clear
 
-load('oa_uniqlo_17.mat')
+load('oa_FastRetailing_17.mat')
 load("2017-new-d.mat")
 load("L2017.mat")
 load("carbon.mat")
@@ -14,7 +14,7 @@ idx0 = 28:nSec:N;
 idx1 = 33:nSec:N;
 
 raw0 = {soa, noa, toa, moa};
-raw1 = {suniqlo, nuniqlo, tuniqlo, muniqlo};
+raw1 = {sFastRetailing, nFastRetailing, tFastRetailing, mFastRetailing};
 
 for k = 1:4
     M0 = zeros(nSec, nReg);
@@ -27,19 +27,19 @@ for k = 1:4
 end
 
 [soa, noa, toa, moa] = deal(raw0{:});
-[suniqlo, nuniqlo, tuniqlo, muniqlo] = deal(raw1{:});
+[sFastRetailing, nFastRetailing, tFastRetailing, mFastRetailing] = deal(raw1{:});
 
 s0160 = repmat(soa, 1, nReg);
-s1160 = repmat(suniqlo, 1, nReg);
+s1160 = repmat(sFastRetailing, 1, nReg);
 
 n0160 = repmat(noa, 1, nReg);
-n1160 = repmat(nuniqlo, 1, nReg);
+n1160 = repmat(nFastRetailing, 1, nReg);
 
 t0160 = repmat(toa, 1, nReg);
-t1160 = repmat(tuniqlo, 1, nReg);
+t1160 = repmat(tFastRetailing, 1, nReg);
 
 m0160 = repmat(moa, 1, nReg);
-m1160 = repmat(muniqlo, 1, nReg);
+m1160 = repmat(mFastRetailing, 1, nReg);
 
 f2 = squeeze(sum(reshape(f3, N, 3, nReg), 2));
 
@@ -96,9 +96,9 @@ g1(~isfinite(g1)) = 0;
 h0 = m0160;
 h1 = m1160;
 
-outFile0 = "0927cd-17-160-uniqlokuo.xlsx";
+outFile0 = "0927cd-17-160-FastRetailingkuo.xlsx";
 rowsOut = [28 33];
-sheetsOut = {'cc-nonff','cc-uniqlo'};
+sheetsOut = {'cc-traditional apperal','cc-FastRetailing'};
 
 for k = 1:2
 
